@@ -103,29 +103,26 @@ nav a {
     width: 100%;
     height: auto;
     display: block;
+    position: relative;
+    z-index: 1;
 }
 .frame {
     position: relative;
-    background:
-    repeating-linear-gradient(
-        12deg,
-        rgba(255, 255, 255, 0.035) 0px,
-        rgba(255, 255, 255, 0.035) 2px,
-        transparent 2px,
-        transparent 7px
-    ),
-    repeating-linear-gradient(
-        90deg,
-        rgba(0, 0, 0, 0.12) 0px,
-        rgba(0, 0, 0, 0.12) 3px,
-        transparent 3px,
-        transparent 11px
-    ),
-    #17120f;
-    border: 14px solid #30251d;
-    padding: 12px;
+    background: #777;
+    padding: 70px;
     box-sizing: border-box;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+}
+.frame::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("images/victorian-frame.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+    pointer-events: none;
 }
 .frame {
     outline: 6px solid #59483a;
