@@ -73,3 +73,37 @@ nav a {
     color: white;
     outline: 1px solid white;
 }
+.featured {
+    padding: 120px 8vw;
+    border-top: 1px solid white;
+}
+
+.featured-label {
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 50px;
+}
+
+.featured-shirt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.featured-shirt img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.featured h2 {
+    font-size: clamp(50px, 9vw, 120px);
+    line-height: 0.85;
+    letter-spacing: -5px;
+    margin: 45px 0 15px 0;
+}
+
+.featured > p:last-child {
+    font-size: 14px;
+    letter-spacing: 2px;
+}
