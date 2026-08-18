@@ -42,7 +42,7 @@ nav a {
     background-image: url("images/floral-border.svg");
     background-repeat: repeat-x;
     background-size: 40px 40px;
-    background-position: center;
+    background-position: 42% center;
 }
 
 .hero-small {
