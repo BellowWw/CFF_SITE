@@ -128,28 +128,6 @@ nav a {
     outline: 6px solid #59483a;
     outline-offset: -7px;
 }
-.frame::before,
-.frame::after {
-    content: "❧";
-    position: absolute;
-    color: #59483a;
-    font-size: 32px;
-    line-height: 1;
-    z-index: 2;
-}
-
-.frame::before {
-    top: -24px;
-    left: -18px;
-    transform: rotate(-25deg);
-}
-
-.frame::after {
-    bottom: -24px;
-    right: -18px;
-    transform: rotate(155deg);
-}
-}
 .featured h2 {
     font-size: clamp(50px, 9vw, 120px);
     line-height: 0.85;
