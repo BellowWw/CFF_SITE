@@ -35,6 +35,14 @@ nav a {
     padding: 40px 8vw;
     box-sizing: border-box;
 }
+.frame-ornament {
+    height: 55px;
+    margin-bottom: 12px;
+    background-image: url("images/floral-border.svg");
+    background-repeat: repeat-x;
+    background-size: 55px 55px;
+    background-position: center;
+}
 
 .hero-small {
     font-size: 12px;
