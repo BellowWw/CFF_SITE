@@ -124,10 +124,6 @@ nav a {
     z-index: 2;
     pointer-events: none;
 }
-.frame {
-    outline: 6px solid #59483a;
-    outline-offset: -7px;
-}
 .featured h2 {
     font-size: clamp(50px, 9vw, 120px);
     line-height: 0.85;
