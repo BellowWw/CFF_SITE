@@ -113,7 +113,7 @@ nav a {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
 }
 .frame {
-    outline: 3px solid #59483a;
+    outline: 6px solid #59483a;
     outline-offset: -7px;
 }
 .frame::before,
