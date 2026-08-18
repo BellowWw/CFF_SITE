@@ -37,7 +37,7 @@ nav a {
 }
 .frame-ornament {
     height: 40px;
-    margin: -12px -12px 12px -12px;
+    margin: -30px -12px 12px -12px;
 
     background-image: url("images/floral-border.svg");
     background-repeat: repeat-x;
