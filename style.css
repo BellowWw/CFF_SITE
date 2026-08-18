@@ -96,11 +96,36 @@ nav a {
     display: block;
 }
 .frame {
+    position: relative;
     background: #17120f;
     border: 14px solid #30251d;
     padding: 12px;
     box-sizing: border-box;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+}
+
+.frame::before,
+.frame::after {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border: 3px solid #59483a;
+}
+
+.frame::before {
+    top: -8px;
+    left: -8px;
+    border-right: none;
+    border-bottom: none;
+}
+
+.frame::after {
+    bottom: -8px;
+    right: -8px;
+    border-left: none;
+    border-top: none;
+}
 }
 .featured h2 {
     font-size: clamp(50px, 9vw, 120px);
