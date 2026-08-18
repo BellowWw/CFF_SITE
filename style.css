@@ -149,3 +149,30 @@ nav a {
         ),
         #17120f;
 }
+.frame {
+    position: relative;
+    background: #777;
+    padding: 70px;
+    box-sizing: border-box;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+}
+
+.frame::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("images/victorian-frame.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.featured-shirt img {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
