@@ -95,7 +95,13 @@ nav a {
     height: auto;
     display: block;
 }
-
+.frame {
+    background: #17120f;
+    border: 14px solid #30251d;
+    padding: 12px;
+    box-sizing: border-box;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+}
 .featured h2 {
     font-size: clamp(50px, 9vw, 120px);
     line-height: 0.85;
