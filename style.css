@@ -117,7 +117,7 @@ nav a {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url("images/victorian-frame.png");
+    background-image: url("images/frame.svg");
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
