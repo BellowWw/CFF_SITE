@@ -118,8 +118,8 @@ nav a {
     position: absolute;
     inset: 0;
     background-image: url("images/frame.svg");
-    background-size: auto 115%;
-    background-position: center top;
+    background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
     z-index: 2;
     pointer-events: none;
