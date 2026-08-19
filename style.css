@@ -39,7 +39,7 @@ nav a {
     height: 40px;
     margin: -30px -12px 12px -12px;
 
-    background-image: url("images/floral-border.svg");
+    background-image: url("images/frame.svg");
     background-repeat: repeat-x;
     background-size: 40px 40px;
     background-position: 42% center;
@@ -113,17 +113,6 @@ nav a {
     box-sizing: border-box;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
 }
-.frame::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: url("images/frame.svg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 2;
-    pointer-events: none;
-}
 .featured h2 {
     font-size: clamp(50px, 9vw, 120px);
     line-height: 0.85;
@@ -156,23 +145,42 @@ nav a {
     box-sizing: border-box;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
 }
-
-.frame::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: url("images/frame.svg");
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 2;
-    pointer-events: none;
-}
-
 .featured-shirt img {
     width: 100%;
     height: auto;
     display: block;
     position: relative;
     z-index: 1;
+}
+.frame {
+    position: relative;
+    background: #777;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.frame-art {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.frame-opening {
+    position: absolute;
+    left: 18%;
+    right: 18%;
+    top: 18%;
+    bottom: 18%;
+
+    background: #777;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.frame-opening img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
