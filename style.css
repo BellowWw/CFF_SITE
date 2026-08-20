@@ -84,7 +84,7 @@ nav a {
 }
 .frame {
     position: relative;
-    width: 100%;
+    width: 80%;
     aspect-ratio: 1 / 1;
 
     background: #777;
