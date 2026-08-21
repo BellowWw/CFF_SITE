@@ -139,14 +139,3 @@ nav a {
     font-size: 14px;
     letter-spacing: 2px;
 }
-.shirt-image {
-    position: absolute;
-
-    left: 10%;
-    top: 10%;
-
-    width: 70%;
-    height: auto;
-
-    z-index: 2;
-}
