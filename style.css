@@ -85,19 +85,20 @@ nav a {
 .frame {
     position: relative;
     width: 100%;
+    aspect-ratio: 1/1;
 
-
-    background: #777;
 
     box-shadow:
         0 15px 30px rgba(0, 0, 0, 0.6);
 }
 .frame-art {
     width: 100%;
-    height: auto;
+    height: 100%;
+    inset: 0;
     display: block;
-    position: relative;
+    position: absolute;
     z-index: 2;
+    object-fit:contain;
     pointer-events: none;
 }
 .frame-opening {
@@ -137,4 +138,15 @@ nav a {
 .featured > p:last-child {
     font-size: 14px;
     letter-spacing: 2px;
+}
+.shirt-image {
+    position: absolute;
+
+    left: 10%;
+    top: 10%;
+
+    width: 80%;
+    height: auto;
+
+    z-index: 2;
 }
