@@ -3,30 +3,39 @@
 }
 
 body {
-    background: black;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    background: #080808;
+    color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px 35px;
 }
+
 .logo {
     font-size: 24px;
     font-weight: bold;
 }
+
 nav {
     display: flex;
     gap: 25px;
 }
+
 nav a {
-    color: white;
+    color: #f2f2f2;
     text-decoration: none;
     font-size: 14px;
 }
+
+nav a:hover {
+    text-decoration: underline;
+}
+
 .hero {
     min-height: calc(100vh - 90px);
     display: flex;
@@ -34,105 +43,111 @@ nav a {
     justify-content: center;
     padding: 40px 8vw;
 }
+
 .hero-small {
+    margin: 0 0 25px;
     font-size: 12px;
     letter-spacing: 4px;
-    margin: 0 0 25px 0;
 }
+
 .hero h1 {
+    margin: 0;
     font-size: clamp(70px, 13vw, 180px);
     line-height: 0.78;
     letter-spacing: -8px;
-    margin: 0;
 }
+
 .hero-text {
+    max-width: 400px;
+    margin: 45px 0 30px;
     font-size: 16px;
     font-weight: bold;
-    margin: 45px 0 30px 0;
-    max-width: 400px;
 }
+
 .hero-button {
     display: inline-block;
     width: fit-content;
-    color: black;
-    background: white;
-    text-decoration: none;
     padding: 14px 20px;
+    background: #f2f2f2;
+    color: #080808;
+    text-decoration: none;
     font-size: 13px;
     font-weight: bold;
-    transition: 0.15s;
 }
+
 .hero-button:hover {
-    background: black;
-    color: white;
-    outline: 1px solid white;
+    background: #080808;
+    color: #f2f2f2;
+    outline: 1px solid #f2f2f2;
 }
+
 .featured {
     padding: 120px 8vw;
-    border-top: 1px solid white;
+    border-top: 1px solid #f2f2f2;
 }
+
 .featured-label {
+    margin: 0 0 50px;
     font-size: 12px;
     letter-spacing: 4px;
-    margin-bottom: 50px;
 }
+
 .featured-shirt {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
     align-items: center;
 }
+
 .frame {
     position: relative;
     width: 100%;
-    aspect-ratio: 1/1;
-
-
-    box-shadow:
-        0 15px 30px rgba(0, 0, 0, 0.6);
+    aspect-ratio: 1 / 1;
+    background: #777;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.65);
 }
+
 .frame-art {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
-    inset: 0;
     display: block;
-    position: absolute;
-    z-index: 2;
-    object-fit:contain;
+    object-fit: contain;
+    z-index: 3;
     pointer-events: none;
 }
+
 .frame-opening {
     position: absolute;
-
-    left: 17%;
-    right: 17%;
-    top: 17%;
-    bottom: 17%;
-
+    left: 12%;
+    right: 12%;
+    top: 12%;
+    bottom: 12%;
     background: #777;
-
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    overflow: hidden;
-
     z-index: 1;
 }
+
 .frame-opening img {
     width: 100%;
     height: auto;
-
     display: block;
+    z-index: 2;
 }
+
 .frame-back {
     transform: rotate(3deg);
 }
+
 .featured h2 {
+    margin: 45px 0 15px;
     font-size: clamp(50px, 9vw, 120px);
     line-height: 0.85;
     letter-spacing: -5px;
-    margin: 45px 0 15px 0;
 }
 
 .featured > p:last-child {
