@@ -120,10 +120,10 @@ nav a:hover {
 
 .frame-opening {
     position: absolute;
-    left: 6%;
-    right:6%;
-    top: 6%;
-    bottom: 6%;
+    left: 12%;
+    right:12%;
+    top: 12%;
+    bottom: 12%;
     background: #777;
     overflow: hidden;
     display: flex;
