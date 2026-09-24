@@ -103,7 +103,7 @@ nav a:hover {
     position: relative;
     width: 100%;
     aspect-ratio: 1 / 1;
-    background: #777;
+    background: #222;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.65);
 }
 
