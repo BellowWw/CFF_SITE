@@ -105,6 +105,11 @@ nav a:hover {
     aspect-ratio: 1 / 1;
     background: #222;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.65);
+    transition: transform 0.3s ease;
+}
+
+.frame:hover {
+    transform: translateY(-8px);
 }
 
 .frame-art {
@@ -153,15 +158,4 @@ nav a:hover {
 .featured > p:last-child {
     font-size: 14px;
     letter-spacing: 2px;
-}
-.frame {
-    transition: transform 0.3s ease;
-}
-
-.frame:hover {
-    transform: translateY(-8px);
-}
-
-.frame-back:hover {
-    transform: rotate(3deg) translateY(-8px);
 }
