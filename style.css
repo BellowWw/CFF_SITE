@@ -154,3 +154,14 @@ nav a:hover {
     font-size: 14px;
     letter-spacing: 2px;
 }
+.frame {
+    transition: transform 0.3s ease;
+}
+
+.frame:hover {
+    transform: translateY(-8px);
+}
+
+.frame-back:hover {
+    transform: rotate(3deg) translateY(-8px);
+}
